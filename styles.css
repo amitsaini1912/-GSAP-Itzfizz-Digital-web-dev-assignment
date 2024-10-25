@@ -1,0 +1,80 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    padding: 1rem 2rem;
+    background-color: #00bcd4;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff4081;
+    transform: scale(1.1);
+  }
+  
+  /* Floating Elements */
+  .floating-element {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    mix-blend-mode: screen;
+  }
+  
+  #circle {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 30%;
+  }
+  
+  #square {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    top: 50%;
+    right: 20%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    .hero-subtitle {
+      font-size: 1.2rem;
+    }
+  }
+  
